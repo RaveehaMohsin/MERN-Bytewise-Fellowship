@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Table with Search and Pagination</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Search Bar -->
+        <div class="row mb-3">
+            <div class="col-6 col-md-3 d-flex">
+                <div style="display: flex; align-items: center;">
+                <span>Show</span><input type="number" id="searchInput" class="form-control m-2" value="10" style="height: 30px;width: 60px;" > <span>Entries</span>   
+                </div>          
+            </div>
+            <div class="col-6 col-md-3 offset-md-6">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search...">
+            </div>
+        </div>
+
+        <!-- Table -->
+        <table class="table table-bordered table-responsive-sm">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll Number</th>
+                    <th>Email</th>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td>Raveeha Mohsin</td>
+                    <td>149</td>
+                    <td>raveeha.mohsin@example.com</td>
+                    <td>Mathematics</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Ali Ahmed</td>
+                    <td>150</td>
+                    <td>ali.ahmed@example.com</td>
+                    <td>Physics</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>Sara Khan</td>
+                    <td>151</td>
+                    <td>sara.khan@example.com</td>
+                    <td>Chemistry</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Ahmed Raza</td>
+                    <td>152</td>
+                    <td>ahmed.raza@example.com</td>
+                    <td>Biology</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>Maryam Ali</td>
+                    <td>153</td>
+                    <td>maryam.ali@example.com</td>
+                    <td>English</td>
+                    <td>A-</td>
+                </tr>
+                <tr>
+                    <td>Hassan Raza</td>
+                    <td>154</td>
+                    <td>hassan.raza@example.com</td>
+                    <td>History</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>Zara Shah</td>
+                    <td>155</td>
+                    <td>zara.shah@example.com</td>
+                    <td>Geography</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Usman Iqbal</td>
+                    <td>156</td>
+                    <td>usman.iqbal@example.com</td>
+                    <td>Computer Science</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Fatima Noor</td>
+                    <td>157</td>
+                    <td>fatima.noor@example.com</td>
+                    <td>Mathematics</td>
+                    <td>A-</td>
+                </tr>
+                <tr>
+                    <td>Bilal Ahmed</td>
+                    <td>158</td>
+                    <td>bilal.ahmed@example.com</td>
+                    <td>Physics</td>
+                    <td>B+</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example"> 
+            <div class="row">
+                <div class="col-12 col-md-3 offset-md-9">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
