@@ -1,0 +1,51 @@
+body
+{
+    background-color: cadetblue;
+}
+
+.inner-container{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 15%;
+    box-sizing: border-box;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+}
+
+.inputitem {
+    padding-top: 2%; 
+    padding-left: 30%;
+}
+
+.inputitem input{
+    width: 60%;
+   
+}
+
+.selection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.selection li{
+    padding: 2%;
+    list-style: none;
+}
+
+.clearbutton{
+    color: white;
+    background-color: rgb(231, 97, 44) ;
+}
+
+.clearbutton:hover{
+    background-color: rgb(236, 143, 106) ;
+}
+
+.tasks{
+    margin-bottom: 5%;
+    list-style-type:square;
+
+}
