@@ -53,12 +53,12 @@ body{
     height: 200px;
     margin-bottom: 2%;
     display:  flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    flex-direction: column;
+
 }
 .singleContext{
-    padding-top: 1.5%;
+   padding-top: 1.5%;
    text-align: center;
-   color: rgb(169, 167, 167);
-    
+   color: rgb(169, 167, 167); 
 }
